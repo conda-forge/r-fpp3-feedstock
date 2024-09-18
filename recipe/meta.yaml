@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fpp3_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fpp3/fpp3_{{ version }}.tar.gz
-  sha256: 3245c18d52f35f5ac3e706732121d0a8bf0f8472b996464e3ad1ebd023a56f96
+  sha256: 983e4e74a2c66b267c7acc56bfba4504d93e22a2427fc035ab07537e5d0f9bb5
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -65,10 +65,7 @@ about:
   dev_url: https://github.com/robjhyndman/fpp3package
   doc_url: https://pkg.robjhyndman.com/fpp3package/
   license: GPL-3.0-only
-  summary: 'All data sets required for the examples and exercises in the book "Forecasting: principles
-    and practice" by Rob J Hyndman and George Athanasopoulos <https://OTexts.com/fpp3/>.
-    All packages required to run the examples are also loaded. Additional data sets
-    not used in the book are also included.'
+  summary: 'All data sets required for the examples and exercises in the book "Forecasting: principles and practice" by Rob J Hyndman and George Athanasopoulos <https://OTexts.com/fpp3/>. All packages required to run the examples are also loaded. Additional data sets not used in the book are also included.'
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
