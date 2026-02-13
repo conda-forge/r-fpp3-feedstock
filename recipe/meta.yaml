@@ -17,6 +17,10 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -30,6 +34,7 @@ requirements:
     - r-fable >=0.3.0
     - r-feasts >=0.1.7
     - r-ggplot2 >=3.1.1
+    - r-ggtime >=0.2.0
     - r-lubridate >=1.7.4
     - r-purrr >=0.2.4
     - r-rstudioapi >=0.7
@@ -45,6 +50,7 @@ requirements:
     - r-fable >=0.3.0
     - r-feasts >=0.1.7
     - r-ggplot2 >=3.1.1
+    - r-ggtime >=0.2.0
     - r-lubridate >=1.7.4
     - r-purrr >=0.2.4
     - r-rstudioapi >=0.7
