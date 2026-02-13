@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fpp3_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fpp3/fpp3_{{ version }}.tar.gz
-  sha256: f48bfc2c41f387202553cbf9bf98dafe0ab8998f8cced5ec8897c90d1754f44d
+  sha256: 61d0f065121fbde768ca1653e1410e059b56eeb488e3c14dec198ebcb8c5142c
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
